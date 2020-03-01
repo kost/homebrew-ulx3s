@@ -1,6 +1,6 @@
 # Homebrew Repository for ULX3S Open-Source FPGA Tools
 
-This repostiory allows you to easily install essential set of tools for ULX3S programming.
+This repository allows you to easily install essential set of tools for ULX3S programming.
 
 ## Getting Started
 
