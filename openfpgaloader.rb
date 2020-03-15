@@ -1,7 +1,7 @@
 class Openfpgaloader < Formula
   desc "Universal utility for programming FPGA"
   homepage "https://github.com/trabucayre/openFPGALoader"
-  head "https://github.com/trabucayre/openFPGALoader"
+  head "https://github.com/trabucayre/openFPGALoader.git"
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
