@@ -13,7 +13,7 @@ class NextpnrIce40 < Formula
   depends_on "icestorm"
 
   def install
-    system "cmake", "-DARCH=ice40", "-DICEBOX_ROOT=#{Formula["icestorm"].prefix.realpath}", ".", *std_cmake_args, "-DBoost_NO_BOOST_CMAKE=on", "-DBUILD_TESTS=OFF"
+    system "cmake", "-DARCH=ice40", "-DICEBOX_ROOT=#{Formula["icestorm"].latest_head_prefix}", ".", *std_cmake_args, "-DBoost_NO_BOOST_CMAKE=on", "-DBUILD_TESTS=OFF"
     system "make", "install"
   end
 
