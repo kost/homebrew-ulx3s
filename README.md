@@ -1,6 +1,7 @@
 # Homebrew Repository for ULX3S Open-Source FPGA Tools
 
-This repository allows you to easily install essential set of tools for ULX3S programming.
+This repository allows you to easily install essential set of tools for ULX3S programming. Also, comes with tools for ICE40 related boards.
+
 
 ## Getting Started
 
@@ -12,6 +13,28 @@ Installing a simple toolchain is as easy as running the following:
 $ brew tap kost/homebrew-ulx3s
 $ brew install --HEAD project-trellis yosys nextpnr-trellis ujprog
 ```
+
+You can also install alternative to ujprog called openFPGALoader:
+
+```
+$ brew install --HEAD openfpgaloader
+```
+
+## Features
+
+ULX3S tools:
+
+  - project-trellis
+  - nextpnr-trelllis
+  - yosys
+  - ujprog
+  - openfpgaloader
+
+ICE40 tools:
+
+  - icestorm
+  - nextpnr-ice40
+  - yosys
 
 ## Development
 
@@ -27,4 +50,4 @@ brew untap test/ulx3s
 
 # Credits
 
-project-trellis and nextpnr-trellis is taken from: https://github.com/ktemkin/homebrew-oss-fpga
+trellis related and ice stuff is taken and adapted from: https://github.com/ktemkin/homebrew-oss-fpga
