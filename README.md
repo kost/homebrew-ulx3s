@@ -28,6 +28,7 @@ ULX3S tools:
   - nextpnr-trelllis
   - yosys
   - ujprog
+  - fujprog
   - openfpgaloader
 
 ICE40 tools:
