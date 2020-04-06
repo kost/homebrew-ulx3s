@@ -10,7 +10,7 @@ class Fujprog < Formula
   depends_on "libusb-compat"
 
   def install
-    cd "fujprog" do
+    cd "fujprog--git" do
       system "cmake", ".", *std_cmake_args
       system "make", "install"
     end
