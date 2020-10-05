@@ -11,7 +11,7 @@ Installing a simple toolchain is as easy as running the following:
 
 ```
 $ brew tap kost/homebrew-ulx3s
-$ brew install --HEAD project-trellis yosys nextpnr-trellis ujprog
+$ brew install --HEAD project-trellis yosys nextpnr-trellis fujprog
 ```
 
 You can also install alternative to ujprog called openFPGALoader:
