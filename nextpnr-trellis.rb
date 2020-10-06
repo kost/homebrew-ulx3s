@@ -13,7 +13,8 @@ class NextpnrTrellis < Formula
   depends_on "project-trellis"
 
   def install
-    system "cmake", "-DARCH=ecp5", "-DBUILD_GUI=OFF", "-DBUILD_PYTHON=OFF", \
+    system "cmake", "-DARCH=ecp5", \
+       "-DTRELLIS_ROOT=#{Formula['project-trellis'].prefix.to_s+'-'+Formula['project-trellis'].any_installed_version.version.commit.to_s}", \
        "-DTRELLIS_INSTALL_PREFIX=#{HOMEBREW_PREFIX}", \
        ".", *std_cmake_args, "-DBoost_NO_BOOST_CMAKE=on", "-DBUILD_TESTS=OFF"
     system "make", "install"
