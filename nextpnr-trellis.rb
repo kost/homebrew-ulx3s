@@ -14,7 +14,7 @@ class NextpnrTrellis < Formula
 
   def install
     system "cmake", "-DARCH=ecp5", \
-       "-DTRELLIS_LIBDIR=#{Formula['project-trellis'].prefix.to_s+'-'+Formula['project-trellis'].any_installed_version.version.commit.to_s+"/lib"}", \
+       "-DTRELLIS_LIBDIR=#{Formula['project-trellis'].prefix.to_s+'-'+Formula['project-trellis'].any_installed_version.version.commit.to_s+"/lib/trellis"}", \
        "-DTRELLIS_INSTALL_PREFIX=#{HOMEBREW_PREFIX}", \
        ".", *std_cmake_args, "-DBoost_NO_BOOST_CMAKE=on", "-DBUILD_TESTS=OFF"
     system "make", "install"
