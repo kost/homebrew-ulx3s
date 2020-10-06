@@ -6,7 +6,7 @@ class NextpnrTrellis < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "eigen" => :build
-  depends_on "python"
+  depends_on "python@3.8"
   depends_on "boost"
   depends_on "boost-python3"
   depends_on "qt5"
